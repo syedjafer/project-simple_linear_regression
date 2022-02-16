@@ -1,0 +1,17 @@
+<div class="title">
+    Simple Linear Regression - Salary Data
+</div>
+<div class="row">
+  <div class="col-8">
+    <plotly-plot [data]="graph.data" [layout]="graph.layout"></plotly-plot>
+  </div>
+  <div class="col-4" style="margin-top: 80px;">
+    <div style="width: fit-content;">
+      <div class="form-group">
+        <label for="ExperienceValue">Experience</label>
+        <input type="number" [(ngModel)]="experience" class="form-control" id="experienceValue" placeholder="Enter Experience">
+      </div>
+      <button (click)="getExperience()" class="btn btn-primary" style="margin-top: 10px;">Submit</button>
+    </div>
+  </div>
+</div>
